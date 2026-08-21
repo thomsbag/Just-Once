@@ -1,0 +1,200 @@
+<!DOCTYPE html><html class="light" lang="fr"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Infos Urgence - Just Once</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                            "on-secondary": "#ffffff",
+                            "tertiary-fixed-dim": "#ffb5a0",
+                            "surface-container-high": "#eae8e7",
+                            "surface-container": "#efeded",
+                            "primary-fixed-dim": "#aacfba",
+                            "tertiary-fixed": "#ffdbd1",
+                            "tertiary": "#8b4e3c",
+                            "surface-bright": "#fbf9f8",
+                            "secondary": "#5f5e5a",
+                            "background": "#fbf9f8",
+                            "secondary-fixed-dim": "#c9c6c1",
+                            "inverse-on-surface": "#f2f0f0",
+                            "inverse-primary": "#aacfba",
+                            "outline": "#727974",
+                            "surface-variant": "#e4e2e2",
+                            "outline-variant": "#c1c8c2",
+                            "primary": "#436555",
+                            "on-tertiary-container": "#542214",
+                            "on-error-container": "#93000a",
+                            "on-surface": "#1b1c1c",
+                            "on-primary": "#ffffff",
+                            "secondary-container": "#e5e2dc",
+                            "error": "#ba1a1a",
+                            "primary-fixed": "#c5ebd6",
+                            "surface-container-low": "#f5f3f3",
+                            "error-container": "#ffdad6",
+                            "on-background": "#1b1c1c",
+                            "on-primary-fixed": "#002114",
+                            "tertiary-container": "#d08672",
+                            "on-secondary-fixed": "#1c1c18",
+                            "on-tertiary-fixed-variant": "#6f3727",
+                            "surface-tint": "#436555",
+                            "primary-container": "#7da18e",
+                            "on-tertiary-fixed": "#380d03",
+                            "surface": "#fbf9f8",
+                            "surface-container-lowest": "#ffffff",
+                            "on-primary-fixed-variant": "#2c4d3e",
+                            "secondary-fixed": "#e5e2dc",
+                            "on-error": "#ffffff",
+                            "on-secondary-container": "#656460",
+                            "surface-dim": "#dbd9d9",
+                            "on-primary-container": "#153729",
+                            "on-tertiary": "#ffffff",
+                            "on-secondary-fixed-variant": "#474743",
+                            "surface-container-highest": "#e4e2e2",
+                            "inverse-surface": "#303030",
+                            "on-surface-variant": "#414844"
+                    },
+                    "borderRadius": {
+                            "DEFAULT": "1rem",
+                            "lg": "2rem",
+                            "xl": "3rem",
+                            "full": "9999px"
+                    },
+                    "spacing": {
+                            "stack-gap-md": "24px",
+                            "grid-gutter": "24px",
+                            "container-padding-mobile": "20px",
+                            "stack-gap-sm": "12px",
+                            "container-padding-desktop": "64px",
+                            "stack-gap-lg": "48px",
+                            "base": "8px"
+                    },
+                    "fontFamily": {
+                            "button": ["Quicksand"],
+                            "label-caps": ["Quicksand"],
+                            "headline-md": ["Quicksand"],
+                            "body-md": ["Quicksand"],
+                            "headline-lg": ["Quicksand"],
+                            "headline-lg-mobile": ["Quicksand"],
+                            "body-lg": ["Quicksand"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background-color: theme('colors.background');
+            color: theme('colors.on-background');
+        }
+        .soft-shadow {
+            box-shadow: 0px 10px 30px rgba(125, 161, 142, 0.1);
+        }
+        .inner-depth {
+            box-shadow: inset 0 0 0 1px rgba(228, 226, 226, 0.5);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-primary-container selection:text-on-primary-container">
+<header class="w-full top-0 sticky z-50 bg-background/80 backdrop-blur-md transition-all duration-300 ease-in-out">
+<div class="max-w-7xl mx-auto px-8 flex justify-between items-center h-20">
+<a class="flex items-center gap-3 hover:opacity-80 transition-opacity" href="index.html">
+<img alt="Just Once Logo" class="h-10 w-10 object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpS2DtZSXWpCSHcWlpzJq5Grf9_5XrIjtGctejzvnEuLvxGcB00hODsG7op5VbSxJl_5pf7YSN34Cit-DhjJfM5pb-SC_1cHykenLy0pSKQWS4SbsMQ47fiHRkBSH5v_ngXevCNWVqzTyVNG75P3h-mxbLEP3sVlbVf_Ie9ixNoITgZcMfSH928KEYCw1zGjjmEnv57ruKcLE8gHZyLBHcSQ-9FVkeCllaN7Pp1tvAqEPl5WbP0pnj">
+<span class="text-headline-md font-headline-md font-bold text-primary dark:text-inverse-primary tracking-tight hidden sm:block">Just Once</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-secondary hover:text-primary transition-colors font-label-caps text-label-caps" href="index.html">Home</a>
+<a class="text-secondary hover:text-primary transition-colors font-label-caps text-label-caps" href="our-kit.html">Our Kit</a>
+<a class="text-secondary hover:text-primary transition-colors font-label-caps text-label-caps" href="emergency-info.html">Emergency Info</a>
+<a class="text-secondary hover:text-primary transition-colors font-label-caps text-label-caps" href="our-story.html">Our Story</a>
+</nav>
+<div class="flex items-center gap-4">
+<a class="bg-primary text-on-primary font-button text-button px-6 py-3 rounded-full hover:bg-primary/90 transition-colors hidden sm:block shadow-sm" href="our-kit.html">Shop Now</a>
+<button aria-label="Menu" class="md:hidden text-primary p-2 hover:bg-surface-variant rounded-full transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+
+<section class="w-full pt-16 pb-24 px-container-padding-mobile md:px-container-padding-desktop max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+        <h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-background mb-4">Informations d'Urgence</h1>
+        <p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">Nos fiches réflexes, toujours à portée de main.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="bg-surface-container-lowest rounded-2xl p-6 soft-shadow border border-surface-variant hover:-translate-y-2 transition-transform">
+            <div class="w-12 h-12 bg-error/10 text-error rounded-full flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined">device_thermostat</span>
+            </div>
+            <h3 class="font-headline-md text-xl mb-2">Fièvre</h3>
+            <p class="font-body-md text-secondary text-sm">Les étapes à suivre si la température de votre enfant dépasse 38.5°C. Quand consulter un médecin en urgence.</p>
+        </div>
+        
+        <div class="bg-surface-container-lowest rounded-2xl p-6 soft-shadow border border-surface-variant hover:-translate-y-2 transition-transform">
+            <div class="w-12 h-12 bg-tertiary/10 text-tertiary rounded-full flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined">restaurant</span>
+            </div>
+            <h3 class="font-headline-md text-xl mb-2">Étouffement</h3>
+            <p class="font-body-md text-secondary text-sm">Rappel des gestes de premiers secours (tapes dans le dos, compressions thoraciques) adaptés aux nourrissons.</p>
+        </div>
+        
+        <div class="bg-surface-container-lowest rounded-2xl p-6 soft-shadow border border-surface-variant hover:-translate-y-2 transition-transform">
+            <div class="w-12 h-12 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-4">
+                <span class="material-symbols-outlined">local_fire_department</span>
+            </div>
+            <h3 class="font-headline-md text-xl mb-2">Brûlures</h3>
+            <p class="font-body-md text-secondary text-sm">La règle des 15 : faire couler de l'eau à 15°C pendant 15 minutes, à 15 cm de la brûlure.</p>
+        </div>
+    </div>
+</section>
+</main>
+<footer class="w-full py-16 bg-surface-container-low dark:bg-surface-dim transition-colors duration-200 flat no shadows mt-12">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-stack-gap-lg text-left">
+<div class="col-span-1 md:col-span-1">
+<a class="inline-block mb-4" href="index.html">
+<span class="text-headline-md font-headline-lg font-bold text-primary dark:text-inverse-primary">Just Once</span>
+</a>
+<p class="font-body-md text-body-md text-primary dark:text-primary-fixed-dim mb-4">
+                    © 2026 Just Once. Designed for peace of mind.
+                </p>
+<div class="flex gap-4">
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">camera_alt</span></a>
+<a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span></a>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-4">Produits</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="our-kit.html">Le Kit Just Once</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="our-kit.html">Recharges</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="emergency-info.html">Cartes d'Urgence</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-4">Légal</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="font-label-caps text-label-caps text-on-surface mb-4">Support</h4>
+<ul class="space-y-3 font-body-md text-body-md">
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Us</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">FAQ</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Guide d'utilisation</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body></html>
