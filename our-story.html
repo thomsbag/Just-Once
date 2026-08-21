@@ -1,1 +1,127 @@
-<section class='py-24 text-center'><h1 class='text-4xl font-bold text-primary'>Notre Histoire</h1></section>
+<!DOCTYPE html><html class="light" lang="fr"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Notre Histoire - Just Once</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    primary: "#436555",
+                    "primary-light": "#7da18e",
+                    secondary: "#5f5e5a",
+                    background: "#fdfcfb",
+                    surface: "#ffffff",
+                    "surface-variant": "#eae8e7",
+                },
+                fontFamily: {
+                    sans: ["Quicksand", "sans-serif"],
+                }
+            }
+        }
+    }
+</script>
+<style>
+    body { font-family: 'Quicksand', sans-serif; background-color: #fdfcfb; color: #1b1c1c; }
+    .soft-shadow { box-shadow: 0 10px 40px -10px rgba(67, 101, 85, 0.1); }
+</style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+<header class="w-full top-0 sticky z-50 bg-background/90 backdrop-blur-lg border-b border-surface-variant transition-all">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 h-20 flex justify-between items-center">
+        <!-- New Logo -->
+        <a class="flex items-center gap-3 hover:opacity-80 transition-opacity" href="index.html">
+            <div class="bg-primary/10 p-2 rounded-xl text-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+            </div>
+            <span class="text-2xl font-bold text-primary tracking-tight">Just Once</span>
+        </a>
+        
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center gap-8 font-semibold text-secondary">
+            <a class="hover:text-primary transition-colors" href="index.html">Accueil</a>
+            <a class="hover:text-primary transition-colors" href="our-kit.html">Notre Kit</a>
+            <a class="hover:text-primary transition-colors" href="emergency-info.html">Fiches Urgence</a>
+            <a class="hover:text-primary transition-colors" href="our-story.html">Notre Histoire</a>
+        </nav>
+        
+        <!-- Action & Mobile Toggle -->
+        <div class="flex items-center gap-4">
+            <a class="bg-primary text-white px-6 py-2.5 rounded-full font-semibold hover:bg-primary/90 transition-colors hidden sm:block soft-shadow" href="our-kit.html">Commander</a>
+            <button id="mobile-menu-btn" class="md:hidden text-primary p-2 bg-primary/5 hover:bg-primary/10 rounded-full transition-colors flex items-center justify-center">
+                <span class="material-symbols-outlined" id="menu-icon">menu</span>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="hidden md:hidden bg-surface border-t border-surface-variant absolute w-full left-0 flex-col px-6 py-6 gap-4 font-semibold shadow-2xl">
+        <a class="text-secondary hover:text-primary py-2 text-lg" href="index.html">Accueil</a>
+        <a class="text-secondary hover:text-primary py-2 text-lg" href="our-kit.html">Notre Kit</a>
+        <a class="text-secondary hover:text-primary py-2 text-lg" href="emergency-info.html">Fiches Urgence</a>
+        <a class="text-secondary hover:text-primary py-2 text-lg" href="our-story.html">Notre Histoire</a>
+        <div class="pt-4 mt-2 border-t border-surface-variant">
+            <a class="bg-primary text-white px-6 py-3 rounded-full text-center block w-full" href="our-kit.html">Commander - 49€</a>
+        </div>
+    </nav>
+</header>
+<main class="flex-grow">
+
+        <section class="py-16 md:py-24 px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="w-full lg:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?auto=format&fit=crop&w=800&q=80" alt="Un parent rassurant son enfant" class="rounded-[3rem] w-full h-[500px] object-cover soft-shadow">
+                </div>
+                <div class="w-full lg:w-1/2 flex flex-col items-start">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-8">Né d'une nuit de panique.</h1>
+                    <div class="prose prose-lg text-secondary space-y-6">
+                        <p>Tout a commencé une nuit de novembre. Notre fille a fait sa première poussée de fièvre importante. À 3h du matin, paniqués, nous avons fouillé nos placards à la recherche d'un thermomètre fonctionnel et de sérum physiologique.</p>
+                        <p>Le chaos de notre ancienne trousse à pharmacie—remplie de produits périmés ou inadaptés—n'a fait qu'amplifier notre anxiété. C'est à ce moment précis que <strong>Just Once</strong> est né.</p>
+                        <p>Nous avons collaboré avec des pédiatres et des urgentistes pour concevoir le kit que nous aurions aimé avoir cette nuit-là. Un kit qui va à l'essentiel, sans fioritures, pensé pour l'urgence avec une exigence de qualité stricte.</p>
+                        <p class="font-bold text-primary text-xl mt-8">Parce qu'il suffit d'une fois.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+</main>
+<footer class="w-full py-12 bg-surface-variant mt-auto">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6 text-secondary text-sm">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+            <p class="font-medium">© 2026 Just Once. L'essentiel pour veiller sur eux.</p>
+        </div>
+        <div class="flex gap-6 font-medium">
+            <a href="index.html" class="hover:text-primary transition-colors">Accueil</a>
+            <a href="our-kit.html" class="hover:text-primary transition-colors">Le Kit</a>
+            <a href="emergency-info.html" class="hover:text-primary transition-colors">Urgences</a>
+            <a href="our-story.html" class="hover:text-primary transition-colors">Histoire</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+        const icon = document.getElementById('menu-icon');
+        
+        btn.addEventListener('click', () => {
+            const isHidden = menu.classList.contains('hidden');
+            if (isHidden) {
+                menu.classList.remove('hidden');
+                menu.classList.add('flex');
+                icon.textContent = 'close';
+            } else {
+                menu.classList.add('hidden');
+                menu.classList.remove('flex');
+                icon.textContent = 'menu';
+            }
+        });
+    });
+</script>
+</body></html>
